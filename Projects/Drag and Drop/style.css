@@ -1,0 +1,48 @@
+header {
+    background-color: gold;
+    padding: 20px;
+}
+
+section {
+    background-color: honeydew;
+    padding: 10px;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.box {
+    background-color: whitesmoke;
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px black;
+    display: inline-block;
+    position: relative;
+}
+
+.imageBox {
+    background-image: url(swastika.png);
+    background-size: cover;
+    width: 128px;
+    height: 128px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.hold {
+    border: dashed royalblue;
+    border-radius: 10px;
+}
+
+.enter {
+    background-color: black;
+}
+
+.hide {
+    display: none;
+}

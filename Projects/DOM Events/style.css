@@ -1,0 +1,31 @@
+header {
+    padding: 10px;
+    background-color: royalblue;
+}
+
+section {
+    background-color: silver;
+    padding: 10px;
+    margin: 8px 0;
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+}
+
+input[type=checkbox] {
+    width: auto;
+}
+
+b {
+    padding: 10px;
+    margin: 10px;
+}
+
+select {
+    padding: 10px;
+    margin: 10px;
+}

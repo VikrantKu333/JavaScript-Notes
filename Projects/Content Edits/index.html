@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Edits</title>
+    <style>
+        header {
+            background-color: orangered;
+            padding: 10px;
+            margin: 5px;
+            text-align: center;
+        }
+
+        section {
+            background-color: limegreen;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        p {
+            padding: 8px;
+        }
+
+        textarea {
+            padding: 10px;
+            width: 90%;
+            display: block;
+            margin: auto;
+        }
+
+        button {
+            padding: 5px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <b>Content Edits</b>
+        <button onclick="clearAll()">Clear</button>
+    </header>
+    <section>
+        <p contenteditable="true">This element created by only HTML and Text can be edited by the user.</p>
+    </section>
+    <section>
+        <div id="editContent"></div>
+    </section>
+
+    <script src="content edits.js"></script>
+</body>
+
+</html>

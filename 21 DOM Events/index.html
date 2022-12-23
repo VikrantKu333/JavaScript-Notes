@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM Events</title>
+    <style>
+        section {
+            background-color: tomato;
+            margin: 10%;
+            padding: 0.5px 10px;
+            text-align: center;
+        }
+
+        .bg-green {
+            background-color: springgreen;
+        }
+
+        .bg-blue {
+            background-color: blueviolet;
+        }
+
+        .bg-yellow {
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+
+<body id="bodyContainer">
+    <section id="firstContainer" class="container">
+        <p>This is Event Listeners</p>
+    </section>
+
+    <section id="secondContainer" class="container bg-green">
+        <p id="textRegular" class="textEvent textBlack">Events</p>
+    </section>
+
+    <section id="thirdContainer" class="container bg-blue">
+        <p>Set Timeout & Clear Timeout</p>
+        <p id="timeOut">Click "Start" and wait 2 seconds</p>
+        <button onclick="_timeout = setTimeout(set_timeout, 2000)">Start</button>
+        <button onclick="clearTimeout(_timeout)">Stop</button>
+    </section>
+
+    <section class="container bg-yellow">
+        <p>Set Interval & Clear Interval</p>
+        <p id="myTime">Time</p>
+        <button onclick="_interval = setInterval(set_interval, 1000)">Set Time</button>
+        <button onclick="clearInterval(_interval)">Stop Time</button>
+    </section>
+
+    <script src="dom events.js"></script>
+</body>
+
+</html>

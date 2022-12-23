@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postman REST API</title>
+    <link rel="stylesheet" href="PRISM/prism.css">
+    <style>
+        header {
+            background-color: gold;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        nav {
+            text-align: center;
+            background-color: whitesmoke;
+            margin: 5px auto;
+            border-radius: 5px;
+        }
+
+        nav button {
+            background-color: greenyellow;
+        }
+
+        section,
+        article {
+            background-color: silver;
+            padding: 10px;
+            margin: 5px auto;
+            border-radius: 5px;
+        }
+
+        article {
+            background-color: whitesmoke;
+        }
+
+        .rest,
+        .request {
+            text-align: center;
+        }
+
+        input,
+        select,
+        button,
+        textarea {
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: dodgerblue;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>Postman REST API</header>
+    <nav>
+        <button id="get_link">GET</button>
+        <button id="post_link">POST</button>
+    </nav>
+    <section>
+        <div class="rest">
+            <input type="url" placeholder="URL" id="REST_URL">
+            <select name="restType" onchange="rest()" id="REST_Option">
+                <option value="GET">GET</option>
+                <option value="POST">POST</option>
+            </select>
+            <button id="restSend">Send</button>
+        </div>
+        <div class="request" id="request">
+            <hr>
+            <textarea name="" id="requestData" cols="40" rows="10" placeholder="Request"></textarea>
+        </div>
+    </section>
+    <article>
+        <div class="response">
+            <pre><code class="language-json line-numbers" id="responseData">Response</code></pre>
+        </div>
+    </article>
+
+    <script src="script.js"></script>
+    <script src="PRISM/prism.js"></script>
+</body>
+
+</html>

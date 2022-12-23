@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript HTML DOM Manipulation</title>
+    <style>
+        * {
+            margin: 5px 0;
+            padding: 10px;
+        }
+
+        header {
+            background-color: red;
+        }
+
+        nav {
+            background-color: blue;
+        }
+
+        section {
+            background-color: green;
+        }
+
+        footer {
+            background-color: gold;
+        }
+
+        .bg-primary {
+            background-color: greenyellow;
+        }
+
+        .text-success {
+            color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container-fluid">This is a Header</header>
+    <nav>This is a Navigation Menu</nav>
+    <section class="container">
+        <h3>This is Section</h3>
+        <button id="clickRed" onclick="style.color='Red'">Touch Me - Red</button>
+        <button id="clickGreen" onclick="style.color='Green'">Touch Me - Green</button>
+        <p>This is Paragraph</p>
+        <ul id="drink">
+            <li>Beer</li>
+            <li>Juice</li>
+            <li>Coffee</li>
+        </ul>
+    </section>
+    <footer class="container-fluid">This is Footer</footer>
+
+    <script src="dom manipulation.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <style>
+        nav {
+            background-color: gold;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        section {
+            background-color: greenyellow;
+            margin-top: 5px;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        button {
+            background-color: royalblue;
+            margin: 5px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .table {
+            margin: auto;
+        }
+
+        .form-group {
+            margin: 10px;
+        }
+
+        .form-control {
+            padding: 10px;
+            border-radius: 5px;
+            border-style: none;
+            width: 80%;
+        }
+
+        #item {
+            background-color: lavender;
+        }
+    </style>
+</head>
+
+<body onload="update()">
+    <nav>To Do List</nav>
+    <section>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Title" id="title">
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" placeholder="Description" id="description"></textarea>
+        </div>
+        <button id="add" onclick="addToList()">Add To List</button>
+        <button id="clear" onclick="clearList()">Clear List</button>
+    </section>
+
+    <section id="item">
+        <h1>To Do Items List</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>S. No.</th>
+                    <th>Item Title</th>
+                    <th>Item Description</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+
+            </tbody>
+        </table>
+    </section>
+
+    <script src="ToDoList.js"></script>
+</body>
+
+</html>

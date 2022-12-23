@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock | Date & Time</title>
+    <style>
+        nav {
+            background-color: royalblue;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        section {
+            background-color: aqua;
+            margin-top: 5px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        @font-face {
+            font-family: 'Digital Font';
+            src: url("../DigitalNumbers-Regular.ttf");
+        }
+
+        #digitalClock {
+            background-color: black;
+            color: red;
+            font-family: 'Digital Font', 'Times New Roman', Times, serif;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>Time and Date </nav>
+    <section>
+        <p>Current Time : <span id="time"></span> </p>
+        <p>Current Date : <span id="date"></span> </p>
+        <p>Current US Date Format : <span id="dateUS"></span> </p>
+        <p>Current India Date Format : <span id="dateIndia"></span> </p>
+    </section>
+
+    <section id='digitalClock'></section>
+
+    <script src="clock.js"></script>
+</body>
+
+</html>

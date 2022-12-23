@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Using Regular Expression in JavaScript</title>
+    <style>
+        header {
+            background-color: teal;
+            text-align: center;
+            padding: 10px;
+        }
+
+        section {
+            background-color: lightseagreen;
+            text-align: center;
+            padding: 10px;
+            width: 340px;
+            margin: 8px auto;
+        }
+
+        section small {
+            text-align: justify;
+        }
+
+        section form input,
+        button {
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            width: 80%;
+            border: none;
+            box-shadow: 1px 1px 3px black;
+        }
+
+        section form input:focus {
+            outline: none;
+            border: 2px solid blue;
+        }
+
+        section form button {
+            background-color: dodgerblue;
+        }
+
+        section form button:hover {
+            cursor: pointer;
+        }
+
+        .success {
+            background-color: greenyellow;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .failure {
+            background-color: salmon;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Form Validation</h1>
+    </header>
+    <section>
+        <div id="message"></div>
+        <form action="">
+            <input id="fullName" type="text" placeholder="Full Name">
+            <input id="userName" type="text" placeholder="User Name">
+            <input id="emailID" type="text" placeholder="Email ID">
+            <input id="mobileNumber" type="text" placeholder="Mobile Number">
+            <input id="userPassword" type="password" placeholder="Password">
+            <button id="formSubmit" type="submit">Sign Up</button>
+        </form>
+        <small>
+            <b>Note : -</b>
+            <p><b>Name - </b>Minimum 2 & Maximum 20 Alphabet Character</p>
+            <p><b>User Name - </b>First Character Must be Include Alphabet and Minimum 2 & Maximum 15 Alphabet, Number
+                and Underscore Character</p>
+            <p><b>Email ID - </b>Valid Email ID Format</p>
+            <p><b>Mobile Number - </b>Only 10 Digit Number</p>
+            <p><b>Password - </b>Minimum 8 Character. The string must contain at least 1 lowercase alphabetical & 1
+                uppercase alphabetical, 1 numeric and 1 special character "!@#$%^&*?"</p>
+            <hr>
+            <p><b>Red Colour Border - </b>Is Not Valid</p>
+            <p><b>Green Colour Border - </b>Is Valid</p>
+        </small>
+    </section>
+    <script src="form validation.js"></script>
+</body>
+
+</html>

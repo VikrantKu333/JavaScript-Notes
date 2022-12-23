@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload Local Storage</title>
+    <style>
+        header {
+            background-color: lightseagreen;
+            padding: 10px;
+        }
+
+        section {
+            background-color: lightcyan;
+            margin-top: 8px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        input[type='file'] {
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        input,
+        button {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .card {
+            width: 300px;
+            height: 300px;
+            block-size: fit-content;
+            background-color: whitesmoke;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px teal;
+            display: inline-block;
+            vertical-align: bottom;
+        }
+
+        .card img {
+            width: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Image Upload</h2>
+    </header>
+    <section>
+        <form action="" id="uploadImage" enctype="multipart/form-data">
+            <input type="file" accept=".png, .jpg, .jpeg, .gif" id="imageFile"><br>
+            <input type="submit" value="Upload">
+        </form>
+    </section>
+
+    <section id="showImage">
+
+    </section>
+
+    <script src="image upload local storage.js"></script>
+</body>
+
+</html>

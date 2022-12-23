@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India Breaking News</title>
+    <link rel="shortcut icon" href="Google news.png" type="image/x-icon">
+    <style>
+        header {
+            background-color: orangered;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: gold;
+            padding: 5px;
+            margin: 5px 0;
+            text-align: center;
+        }
+
+        nav button {
+            background-color: royalblue;
+            color: whitesmoke;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        nav button:hover {
+            background-color: dodgerblue;
+            border-radius: 5px;
+        }
+
+        section {
+            background-color: silver;
+            text-align: center;
+        }
+
+        article {
+            background-color: whitesmoke;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 10px;
+            text-align: justify;
+            width: 320px;
+            display: inline-table;
+        }
+
+        article img {
+            border-radius: 10px;
+            width: 300px;
+        }
+
+        article a {
+            background-color: tomato;
+            padding: 10px;
+            display: inline-block;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .align {
+            text-align: center;
+        }
+
+        footer {
+            background-color: black;
+            padding: 10px;
+            margin-top: 5px;
+            text-align: center;
+        }
+
+        footer a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Breaking News</h1>
+    </header>
+    <nav>
+        <button onclick="location.reload()">Home</button>
+        <button onclick="news('technology')">Technology</button>
+        <button onclick="news('business')">Business</button>
+        <button onclick="news('science')">Science</button>
+        <button onclick="news('health')">Health</button>
+    </nav>
+    <section id="latestNews"></section>
+    <footer>
+        <a href="https://newsapi.org/">Resources - News API</a>
+    </footer>
+
+    <script src="News API.js"></script>
+</body>
+
+</html>

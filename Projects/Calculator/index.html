@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        nav {
+            background-color: deepskyblue;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        section {
+            background-color: turquoise;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        input,
+        select,
+        button {
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            border-style: none;
+        }
+    </style>
+</head>
+
+<body onload="cleared()">
+    <nav>Calculator</nav>
+    <section>
+        <input type="number" id="first" placeholder="First Number">
+        <select id="option">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">X</option>
+            <option value="/">/</option>
+        </select>
+        <input type="number" id="second" placeholder="Second Number">
+        <hr>
+        <button onclick="calculate()">Calculate</button><br>
+        <input id="result" placeholder="Answer" readonly>
+    </section>
+
+    <script src="calculator.js"></script>
+</body>
+
+</html>

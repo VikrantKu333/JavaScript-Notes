@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript AJAX</title>
+    <style>
+        header {
+            background-color: teal;
+            padding: 10px;
+        }
+
+        section {
+            background-color: lightseagreen;
+            padding: 10px;
+            margin: 5px 0;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px;
+        }
+
+        .post {
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <header>JavaScript AJAX</header>
+    <section>
+        <button onclick="loadContent()">Load Content</button>
+        <button onclick="getContent()">GET Request</button>
+        <button onclick="postContent()">POST Request</button>
+    </section>
+    <section>
+        <div id="dataContent">Content</div>
+    </section>
+
+    <script src="ajax.js"></script>
+</body>
+
+</html>
